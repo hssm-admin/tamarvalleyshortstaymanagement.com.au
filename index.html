@@ -147,6 +147,25 @@ section{padding-block:clamp(64px,8vw,104px)}
 .guest h3{font-size:17.5px;font-weight:700;color:var(--navy)}
 .guest p{font-size:15.5px;color:var(--muted);margin-top:6px}
 
+.homes{background:#fff}
+.homes-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+@media (max-width:900px){.homes-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.homes-grid{grid-template-columns:1fr}}
+.home a{display:grid;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;height:100%}
+.home a:hover{border-color:var(--gold)}
+.home img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--paper);color:transparent;font-size:0}
+.home-b{display:grid;gap:4px;padding:16px 18px 18px}
+.home-b b{font-size:16.5px;font-weight:700;color:var(--navy);line-height:1.35}
+.home-b span{font-size:14.5px;color:var(--muted)}
+.home-b .home-r{color:var(--bronze);font-weight:600}
+.homes-more{margin-top:28px}
+.homes-more a{color:var(--navy);font-weight:700}
+.done-btn{margin-top:18px}
+.done-sub{margin-top:22px!important;font-weight:700;color:var(--navy)!important}
+.done-list{margin:8px 0 14px;padding-left:20px;color:var(--muted)}
+.done-list li{margin-top:6px}
+.done-list a{color:var(--navy);font-weight:600}
+
 .reviews{background:var(--navy-deep);color:#fff}
 .reviews .h2{color:#fff}
 .reviews .head .eyebrow{color:var(--gold)}
@@ -194,6 +213,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);paddin
 .policy a{color:var(--blue)}
 details.pp{border:0;margin-top:0}
 details.pp>summary{font-size:15px;color:#fff;padding:0;justify-content:flex-start}
+a[href^="mailto:"]{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -271,7 +291,14 @@ details.pp>summary{font-size:15px;color:#fff;padding:0;justify-content:flex-star
       </div>
       <div id="done" class="done" hidden tabindex="-1">
         <h3>Thanks, we've got it.</h3>
-        <p>We'll call you to talk through your property and what it could earn. If you'd rather talk now, call <a href="tel:+61448595221">0448 595 221</a>.</p>
+        <p>We'll call you to talk through your property and what it could earn. To pick a time that suits you, book it here.</p>
+        <a class="btn btn-gold done-btn" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-website" target="_blank" rel="noopener">Book a time for your call</a>
+        <p class="done-sub">While you wait</p>
+        <ul class="done-list">
+          <li><a href="/owner-guide.html">Read our owner guide</a>: how it works, what's included and our fees.</li>
+          <li><a href="#homes">See homes we look after</a>, all Airbnb Guest favourites.</li>
+        </ul>
+        <p class="fine">If you'd rather talk now, call <a href="tel:+61448595221">0448 595 221</a>.</p>
       </div>
     </div>
   </div>
@@ -287,7 +314,7 @@ details.pp>summary{font-size:15px;color:#fff;padding:0;justify-content:flex-star
     </div>
     <div class="grid-s">
       <div class="svc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.6-2h5.8l1.6 2h2A2.5 2.5 0 0 1 21 8.5v9A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5zM12 16.5a3.8 3.8 0 1 0 0-7.6 3.8 3.8 0 0 0 0 7.6z"/></svg><h3>Listing and photos</h3><p>Professional photos and a listing written to get booked, live on Airbnb, Booking.com, Stayz and Google, plus direct bookings.</p></div>
-      <div class="svc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h16M6 16l4-5 3.5 3L19 7M15 7h4v4"/></svg><h3>Pricing that keeps up</h3><p>A full-time revenue manager keeps your nightly rates and minimum stays matched to demand, through busy weekends and quiet months.</p></div>
+      <div class="svc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h16M6 16l4-5 3.5 3L19 7M15 7h4v4"/></svg><h3>Pricing that keeps up</h3><p>Your nightly rates and minimum stays are reviewed every day and matched to demand, through busy weekends and quiet months.</p></div>
       <div class="svc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4h0A1.5 1.5 0 0 1 4 14.5zM8 9h8M8 12h5"/></svg><h3>Guests looked after</h3><p>We answer every enquiry and message, run check-ins and check-outs, and guests can reach us any time for anything urgent.</p></div>
       <div class="svc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 18v-7.5A1.5 1.5 0 0 1 4.5 9h15a1.5 1.5 0 0 1 1.5 1.5V18M3 15h18M3 18v2M21 18v2M6 9V6.5A1.5 1.5 0 0 1 7.5 5h9A1.5 1.5 0 0 1 18 6.5V9M8 9V7.5h3V9M13 9V7.5h3V9"/></svg><h3>Cleaning and hotel linen</h3><p>Professional cleaners after every stay, with hotel-style white linen, fresh towels and triple-sheeted beds.</p></div>
       <div class="svc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 10h16l-1.6 8.4A2 2 0 0 1 16.4 20H7.6a2 2 0 0 1-2-1.6zM8 10l3-6M16 10l-3-6M9 14v2.5M12 14v2.5M15 14v2.5"/></svg><h3>Restocked every stay</h3><p>Toiletries, tea, coffee and household basics topped up before every guest arrives.</p></div>
@@ -331,6 +358,43 @@ details.pp>summary{font-size:15px;color:#fff;padding:0;justify-content:flex-star
       <div class="guest"><h3>Work and study stays</h3><p>Contractors, visiting doctors and nurses, and university visitors need somewhere for a week or a month.</p></div>
       <div class="guest"><h3>Events and celebrations</h3><p>Festivals, sport and weddings fill the town on big weekends.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="homes" id="homes" aria-labelledby="h-homes">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Our homes</p>
+      <h2 class="h2" id="h-homes">Homes we look after in Tasmania</h2>
+      <p class="lede">The same team would look after yours. Every one of these is an Airbnb Guest favourite (ratings as shown on Airbnb, September 2026).</p>
+    </div>
+    <ul class="homes-grid">
+      <li class="home"><a href="https://www.airbnb.com.au/rooms/1086702171435293307" target="_blank" rel="noopener">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1086702171435293307/original/3148b331-4728-4519-afd7-d3a0df97eb6b.jpeg?im_w=720" alt="Modern Home in Heart of Sandy Bay, Sandy Bay" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <span class="home-b"><b>Modern Home in Heart of Sandy Bay</b><span>Sandy Bay &middot; 4 bedrooms &middot; sleeps 10</span><span class="home-r">&#9733; 4.92 &middot; 86 reviews &middot; Guest favourite</span></span>
+      </a></li>
+      <li class="home"><a href="https://www.airbnb.com.au/rooms/918296567807517039" target="_blank" rel="noopener">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE4Mjk2NTY3ODA3NTE3MDM5/original/2a0f9a04-ba3c-4f4e-b376-580b9802767e.jpeg?im_w=720" alt="Luxury Home with Beach Access &amp; Private Hot Tub, South Arm" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <span class="home-b"><b>Luxury Home with Beach Access &amp; Private Hot Tub</b><span>South Arm &middot; 3 bedrooms &middot; sleeps 8</span><span class="home-r">&#9733; 4.96 &middot; 109 reviews &middot; Guest favourite</span></span>
+      </a></li>
+      <li class="home"><a href="https://www.airbnb.com.au/rooms/1670244587657921956" target="_blank" rel="noopener">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1670244587657921956/original/46950679-3ea4-4b20-a4fa-023a88f2f52d.jpeg?im_w=720" alt="Designer Stay w/ River Views, Sandy Bay" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <span class="home-b"><b>Designer Stay w/ River Views</b><span>Sandy Bay &middot; 2 bedrooms &middot; sleeps 4</span><span class="home-r">&#9733; 5.0 &middot; 12 reviews &middot; Guest favourite</span></span>
+      </a></li>
+      <li class="home"><a href="https://www.airbnb.com.au/rooms/1156173168286378781" target="_blank" rel="noopener">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1NjE3MzE2ODI4NjM3ODc4MQ%3D%3D/original/bcdadf9b-1f6c-4117-9981-3c0509da8a63.jpeg?im_w=720" alt="Meticulously Upgraded Home with Valley Views, Lenah Valley" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <span class="home-b"><b>Meticulously Upgraded Home with Valley Views</b><span>Lenah Valley &middot; 3 bedrooms &middot; sleeps 6</span><span class="home-r">&#9733; 4.87 &middot; 94 reviews &middot; Guest favourite</span></span>
+      </a></li>
+      <li class="home"><a href="https://www.airbnb.com.au/rooms/793675992208994669" target="_blank" rel="noopener">
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-793675992208994669/original/e10c344d-8ee4-4a28-9192-e742e89e098c.jpeg?im_w=720" alt="Beachfront Escape in Clifton, Clifton Beach" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <span class="home-b"><b>Beachfront Escape in Clifton</b><span>Clifton Beach &middot; 3 bedrooms &middot; sleeps 5</span><span class="home-r">&#9733; 5.0 &middot; 16 reviews &middot; Guest favourite</span></span>
+      </a></li>
+      <li class="home"><a href="https://www.airbnb.com.au/rooms/1101639920039317663" target="_blank" rel="noopener">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1101639920039317663/original/fcffaab8-9d9b-4f80-99ab-fa3d9f17ac9e.jpeg?im_w=720" alt="The Perfect Apartment, Sandy Bay" width="720" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <span class="home-b"><b>The Perfect Apartment</b><span>Sandy Bay &middot; 1 bedroom &middot; sleeps 2</span><span class="home-r">&#9733; 4.93 &middot; 105 reviews &middot; Guest favourite</span></span>
+      </a></li>
+    </ul>
+    <p class="homes-more"><a href="https://www.airbnb.com.au/users/show/529193594" target="_blank" rel="noopener">See all our homes on our Airbnb host profile</a></p>
   </div>
 </section>
 

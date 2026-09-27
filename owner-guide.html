@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Privacy policy | Tamar Valley Short Stay Management</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://tamarvalleyshortstaymanagement.com.au/privacy.html">
+<title>Owner guide | Tamar Valley Short Stay Management</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://tamarvalleyshortstaymanagement.com.au/owner-guide.html">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
@@ -16,7 +16,7 @@
   --paper:#F4F6FA;--white:#FFFFFF;--ink:#17203A;--muted:#55607B;--line:#DCE2ED;--field:#FBFCFE;--field-line:#C5CFE0;
   --max:1160px;--gutter:clamp(16px,4vw,32px);
   --font:"Plus Jakarta Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  --lace:url("");
+  --lace:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2736%27%20height%3D%2724%27%20viewBox%3D%270%200%2036%2024%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%23D7AD66%27%20stroke-width%3D%271.1%27%20stroke-linecap%3D%27round%27%3E%3Cpath%20d%3D%27M0%202.5H36M0%2021.5H36%27%2F%3E%3Ccircle%20cx%3D%2718%27%20cy%3D%2712%27%20r%3D%275.2%27%2F%3E%3Cpath%20d%3D%27M5%202.5C11%202.5%2012.2%205%2013.6%208.6M31%202.5C25%202.5%2023.8%205%2022.4%208.6M5%2021.5C11%2021.5%2012.2%2019%2013.6%2015.4M31%2021.5C25%2021.5%2023.8%2019%2022.4%2015.4%27%2F%3E%3Cpath%20d%3D%27M0%207.5L2.6%2012L0%2016.5M36%207.5L33.4%2012L36%2016.5%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2718%27%20cy%3D%2712%27%20r%3D%271.6%27%20fill%3D%27%23D7AD66%27%2F%3E%3C%2Fsvg%3E");
   color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -205,6 +205,44 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);paddin
 details.pp{border:0;margin-top:0}
 details.pp>summary{font-size:15px;color:#fff;padding:0;justify-content:flex-start}
 a[href^="mailto:"]{overflow-wrap:anywhere}
+.guide{padding-block:clamp(40px,6vw,76px)}
+.guide .wrap{max-width:900px}
+.guide h1{font-weight:300;font-size:clamp(36px,4.6vw,54px);line-height:1.06;letter-spacing:-.02em;color:var(--navy)}
+.guide .intro{font-size:18px;color:var(--ink);margin-top:18px;max-width:62ch}
+.guide h2{font-size:22px;font-weight:700;color:var(--navy);margin-top:46px;padding-top:22px;border-top:1px solid var(--line)}
+.guide .sec-lede{color:var(--muted);margin-top:8px;max-width:62ch}
+.g-list{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:18px 30px}
+@media (max-width:640px){.g-list{grid-template-columns:1fr}}
+.g-list b{display:block;color:var(--navy);font-size:16.5px}
+.g-list span{display:block;color:var(--muted);font-size:15.5px;margin-top:3px}
+.fees{margin-top:18px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.fees div{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px 20px;border-top:1px solid var(--line)}
+.fees div:first-child{border-top:0}
+.fees b{color:var(--navy)}
+.fees span{color:var(--ink)}
+@media (max-width:560px){.fees div{grid-template-columns:1fr;gap:4px}}
+.g-steps{margin:18px 0 0;padding-left:22px;display:grid;gap:12px}
+.g-steps b{color:var(--navy)}
+.g-steps span{color:var(--muted)}
+.g-note{margin-top:16px;background:#EEF3FB;color:var(--navy);border-radius:10px;padding:14px 16px;font-size:15.5px}
+.g-needs{margin:16px 0 0;padding-left:22px;display:grid;gap:8px;color:var(--ink)}
+.g-cta{grid-template-columns:minmax(0,1fr);margin-top:50px;background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:#fff;border-radius:14px;padding:clamp(24px,4vw,40px);display:grid;gap:16px}
+.g-cta h2{color:#fff;border:0;margin:0;padding:0;font-weight:300;font-size:clamp(26px,3vw,36px);line-height:1.15}
+.g-cta p{color:rgba(255,255,255,.85)}
+.g-cta .acts{display:flex;flex-wrap:wrap;gap:12px}
+.g-cta a:not(.btn){color:#fff}
+.g-tools{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+@media print{
+  .top,.g-tools,.g-cta .acts,footer .cols{display:none!important}
+  body{background:#fff;font-size:12pt}
+  .guide{padding-block:0}
+  .guide h2{break-after:avoid}
+  .g-list li,.fees div,.g-steps li{break-inside:avoid}
+  .g-cta{background:none;color:var(--ink);border:1px solid var(--line)}
+  .g-cta h2,.g-cta p,.g-cta a:not(.btn){color:var(--ink)}
+  footer{background:none;color:var(--muted);padding-block:12px}
+  footer img{display:none}
+}
 </style>
 </head>
 <body>
@@ -212,33 +250,73 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
   <div class="wrap">
     <a class="brand" href="/" aria-label="Tamar Valley Short Stay Management home"><img src="/logo_h.webp" alt="Tamar Valley Short Stay Management" width="110" height="46"></a>
     <a class="call" href="tel:+61448595221" style="margin-left:auto"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.3 4-2 1.4a11 11 0 0 0 6.6 6.6l1.4-2 4 1.3v2.6a2 2 0 0 1-2 2A16.6 16.6 0 0 1 4.6 5.5a2 2 0 0 1 2-2z"/></svg><span>0448 595 221</span></a>
-    <a class="btn btn-gold" href="/#appraisal"><span class="long">Free appraisal</span><span class="short">Appraisal</span></a>
+    <a class="btn btn-gold" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-guide" target="_blank" rel="noopener"><span class="long">Book a call</span><span class="short">Book</span></a>
   </div>
 </header>
-<main class="policy">
+<main class="guide">
   <div class="wrap">
-    <h1>Privacy policy</h1>
-    <p class="upd">Last updated 27 September 2026</p>
-<h2>Who we are</h2>
-<p>Tamar Valley Short Stay Management is a business name of Hobart Short Stay Management Pty Ltd (ABN 12 700 759 191), referred to here as "we" or "us". This policy explains how we handle personal information collected through this website.</p>
-<h2>What we collect</h2>
-<p>When you ask for an appraisal, we collect your name, mobile number, email address, the property address or suburb, and anything else you choose to tell us about the property.</p>
-<p>We also record how you found us, such as the advertisement or search that brought you to the site (for example campaign tags and Google click IDs), the page you were on, and the time you sent the form.</p>
-<h2>How we use it</h2>
-<p>We use your details to contact you about managing your property and to prepare your appraisal. If you become a client, we use them to manage your property under our agreement with you. We use the information about how you found us to understand which advertising works.</p>
-<h2>Where it is stored</h2>
-<p>Your details go into our customer relationship management system (Pipedrive) and our business email. These providers may store data outside Australia.</p>
-<h2>Who we share it with</h2>
-<p>We don't sell your personal information. We share it only with service providers who help us run the business, such as our CRM and email providers, or where the law requires it.</p>
-<h2>Cookies and advertising</h2>
-<p>This website doesn't use advertising or analytics cookies.</p>
-<p>Photos of homes we look after are loaded from Airbnb. If you book a call time, you do that on Calendly's website, and Calendly's privacy policy applies there.</p>
-<h2>Seeing, correcting or deleting your information</h2>
-<p>You can ask to see the information we hold about you, ask us to correct it, or ask us to delete it. Email <a href="mailto:admin@tamarvalleyshortstaymanagement.com.au">admin@tamarvalleyshortstaymanagement.com.au</a> or call 0448 595 221.</p>
-<h2>Complaints</h2>
-<p>If you're unhappy with how we've handled your information, please contact us first. If we can't resolve it, you can contact the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" rel="noopener">oaic.gov.au</a>.</p>
-<h2>Changes</h2>
-<p>We may update this policy from time to time. The current version is always on this page.</p>
+    <p class="eyebrow" style="color:var(--bronze)">Owner guide</p>
+    <h1 style="margin-top:12px">How we look after your Launceston property</h1>
+    <p class="intro">Tamar Valley Short Stay Management is part of Hobart Short Stay Management. Our Hobart team runs pricing, guest messaging and owner accounts for more than 120 short-stay homes in Tasmania, and we line up local cleaners and trades for your property and manage them for you.</p>
+    <div class="g-tools">
+      <button class="btn btn-line" type="button" onclick="window.print()">Save or print this guide</button>
+      <a class="btn btn-gold" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-guide" target="_blank" rel="noopener">Book a time for your call</a>
+    </div>
+
+    <h2>What's included</h2>
+    <ul class="g-list">
+      <li><b>Listing and photos</b><span>Professional photos and a listing written to get booked, live on Airbnb, Booking.com, Stayz and Google, plus direct bookings.</span></li>
+      <li><b>Pricing that keeps up</b><span>Your nightly rates and minimum stays are reviewed every day and matched to demand, through busy weekends and quiet months.</span></li>
+      <li><b>Guests looked after</b><span>We answer every enquiry and message, run check-ins and check-outs, and guests can reach us any time for anything urgent.</span></li>
+      <li><b>Cleaning and hotel linen</b><span>Professional cleaners after every stay, with hotel-style white linen, fresh towels and triple-sheeted beds.</span></li>
+      <li><b>Restocked every stay</b><span>Toiletries, tea, coffee and household basics topped up before every guest arrives.</span></li>
+      <li><b>Maintenance handled</b><span>Regular inspections, a video after every clean, and repairs arranged quickly with trades we trust.</span></li>
+      <li><b>Paid weekly</b><span>Every Wednesday we pay out for the past week&#39;s check-outs, with a statement showing each booking and expense.</span></li>
+      <li><b>Rules and paperwork</b><span>We help you with council requirements, owners corporation rules, fire safety checks and the state short-stay levy.</span></li>
+    </ul>
+
+    <h2>Fees</h2>
+    <p class="sec-lede">Simple, and the same as for our Hobart owners.</p>
+    <div class="fees">
+      <div><b>Management fee</b><span>20% plus GST of the net accommodation takings. That&#39;s what is left after the cleaning fee and the booking platform&#39;s fees.</span></div>
+      <div><b>Monthly fee</b><span>$130 plus GST a month, which covers marketing the property.</span></div>
+      <div><b>Cleaning</b><span>Guests pay a cleaning fee on every booking. We keep it to cover the whole turnover (clean, linen, laundry and consumables), and we don&#39;t take a management fee on it.</span></div>
+      <div><b>Setting up</b><span>Professional photos, and a first deep clean if the property needs one. We quote these before we start.</span></div>
+      <div><b>No lock-in</b><span>There&#39;s no fixed term, just 30 days&#39; notice.</span></div>
+    </div>
+
+    <h2>How it starts</h2>
+    <ol class="g-steps">
+      <li><b>Free appraisal.</b> <span>Send us the details or give us a call. We&#39;ll look at similar Launceston listings and talk you through what your place could earn.</span></li>
+      <li><b>Sign up.</b> <span>Sign our management agreement and fill in one property details form.</span></li>
+      <li><b>Get guest-ready.</b> <span>We organise photos, linen, cleaning, the listing and pricing. If the property is ready to go, bookings can open within about a week.</span></li>
+      <li><b>Get paid.</b> <span>Payouts land every Wednesday, with a statement for every stay.</span></li>
+    </ol>
+    <p class="g-note">Already on Airbnb? We can take over your listing from day one. It keeps its reviews and Guest favourite status, so there&#39;s no starting from scratch.</p>
+
+    <h2>What the home needs</h2>
+    <p class="sec-lede">The basics every guest expects. We'll send you the full checklist and help source anything missing.</p>
+    <ul class="g-needs">
+      <li>Plates, bowls, mugs, glasses and cutlery for every guest, plus pots, pans and basic cooking gear</li>
+      <li>A doona and pillows for every bed, and a mattress protector for each one</li>
+      <li>A hairdryer, iron and ironing board, vacuum, and a clothes horse</li>
+      <li>Working smoke alarms, a fire extinguisher and a first aid kit</li>
+      <li>WiFi, and a digital lock or two lockboxes with two sets of keys</li>
+      <li>Outdoor seating for the full guest count, and a BBQ if there&#39;s room</li>
+    </ul>
+
+    <h2>Permits, rules and insurance</h2>
+    <p class="sec-lede" style="color:var(--ink)"><b style="color:var(--navy)">Do I need a permit?</b> In Tasmania, sharing the home you live in usually doesn&#39;t need a permit. A house or unit that isn&#39;t your main home usually needs a planning permit from council. We can help with the application.</p>
+    <p class="sec-lede" style="color:var(--ink)"><b style="color:var(--navy)">Insurance.</b> We strongly recommend specialised short-stay insurance. Airbnb and the other platforms have their own cover, but it shouldn&#39;t be your main policy.</p>
+
+    <div class="g-cta">
+      <h2>Ready to talk it through?</h2>
+      <p>Book a time for a call, or ring Johnnie on <a href="tel:+61448595221">0448 595 221</a>. You can also email <a href="mailto:admin@tamarvalleyshortstaymanagement.com.au">admin@tamarvalleyshortstaymanagement.com.au</a>.</p>
+      <div class="acts">
+        <a class="btn btn-gold" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-guide" target="_blank" rel="noopener">Book a time for your call</a>
+        <a class="btn btn-line on-dark" href="/#appraisal">Get a free appraisal</a>
+      </div>
+    </div>
   </div>
 </main>
 <footer>
@@ -249,7 +327,7 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
       <div><a href="mailto:admin@tamarvalleyshortstaymanagement.com.au">admin@tamarvalleyshortstaymanagement.com.au</a></div>
       <div><a href="/">Home</a></div>
     </div>
-    <p class="legal">Tamar Valley Short Stay Management is a business name of Hobart Short Stay Management Pty Ltd (ABN 12 700 759 191).</p>
+    <p class="legal">Tamar Valley Short Stay Management is a business name of Hobart Short Stay Management Pty Ltd (ABN 12 700 759 191). Guide updated 27 September 2026.</p>
   </div>
 </footer>
 </body>
