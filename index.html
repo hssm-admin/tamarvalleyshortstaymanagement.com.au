@@ -110,6 +110,7 @@ form .btn{width:100%;margin-top:4px;padding:17px 22px;font-size:17px}
 .msg.ok{background:#EEF6EE;color:#1E4D27}
 .msg.info{background:#EEF3FB;color:var(--navy)}
 .msg.err{background:#FBEDEC;color:#7A2320}
+.msg a{color:inherit;font-weight:700}
 .done h3{font-weight:600;font-size:22px;color:var(--navy)}
 .done p{margin-top:8px;color:var(--muted)}
 
@@ -177,6 +178,20 @@ section{padding-block:clamp(64px,8vw,104px)}
 .q blockquote::before{content:"\201C";display:block;font-size:54px;line-height:.6;color:var(--gold);font-weight:300;margin-bottom:10px}
 .q figcaption{font-size:14px;color:rgba(255,255,255,.7)}
 .q figcaption b{color:#fff;font-weight:600}
+.rev-more{margin-top:32px}
+.rev-more a{color:var(--gold);font-weight:700}
+
+.meet{background:#fff}
+.meet .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:center;max-width:980px}
+.meet-photo{width:clamp(136px,15vw,168px);height:auto;aspect-ratio:1;border-radius:50%;border:4px solid var(--gold);object-fit:cover;background:var(--paper)}
+.meet-body{display:grid;gap:14px}
+.meet-body .eyebrow{color:var(--bronze)}
+.meet-body p{color:var(--muted);max-width:62ch}
+.meet-body p.first{color:var(--ink);font-size:18px}
+.meet-sign{display:grid;gap:2px;margin-top:4px}
+.meet-sign b{color:var(--navy);font-weight:700;font-size:17px}
+.meet-sign span{font-size:14.5px;color:var(--muted)}
+@media (max-width:700px){.meet .wrap{grid-template-columns:1fr}}
 
 .faq .wrap{max-width:880px}
 details{border-bottom:1px solid var(--line)}
@@ -403,13 +418,17 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
     <div class="head">
       <p class="eyebrow">Owners</p>
       <h2 class="h2" id="h-rev">What owners say about our team</h2>
-      <p class="note">Google reviews from owners we manage for in Hobart.</p>
+      <p class="note">Google reviews from owners we look after in Hobart. Rated 4.9 from 35 reviews on Google (September 2026).</p>
     </div>
     <div class="quotes">
-      <figure class="q"><blockquote>Wouldn&#39;t have been able to do it ourselves. Extremely helpful and professional team! Best client experience by far.</blockquote><figcaption><b>Matt Young</b> &middot; Google review</figcaption></figure>
-      <figure class="q"><blockquote>Outstanding attention to detail, friendly and impeccable service. I am always confident Johnnie and the team will take care of all of my needs, couldn&#39;t recommend enough!</blockquote><figcaption><b>Bethany Papps</b> &middot; Google review</figcaption></figure>
-      <figure class="q"><blockquote>From helping to set up and running a successful airbnb Johnnie has been professional from the start, business has grown and has also helped with many aspects along the way. Highly recommended</blockquote><figcaption><b>David Hutchins</b> &middot; Google review</figcaption></figure>
+      <figure class="q"><blockquote>Professional, energetic and hard working, they have the highest of standards and are the only company I would trust with my short stay accommodation in Hobart. … My property has now achieved superhost status under their management and my returns are higher than I thought possible.</blockquote><figcaption><b>Clare Roberts</b> &middot; Google review</figcaption></figure>
+      <figure class="q"><blockquote>I am a retired real estate agent running my own large company over 51 years, experienced in rental management but not holiday management. … By any standards, they are exceptional in their service and follow up on every detail. For once we got lucky and so will you, if you employ him.</blockquote><figcaption><b>Chris M</b> &middot; Google review</figcaption></figure>
+      <figure class="q"><blockquote>Since inception, the occupancy rate has exceeded our expectations. They manage everything, including the administration, cleaning, and any maintenance required. We literally don&#39;t need to attend to anything which has provided us time to concentrate on our own business.</blockquote><figcaption><b>Leeanne Scott</b> &middot; Google review</figcaption></figure>
+      <figure class="q"><blockquote>I renovated my Airbnb from the stud up and managed it myself for a year, so when the time came to choose a manager I had to be sure it was the right person. Johnnie has been exactly that person.</blockquote><figcaption><b>Richard Baines</b> &middot; Google review</figcaption></figure>
+      <figure class="q"><blockquote>Johnnie and co. have been fantastic. They’re very easy to communicate with and nothing feels like too much trouble. We’re living interstate at the moment and have been so grateful that Hobart Short Stays are taking good care of all things short stay management for us while we’re away!</blockquote><figcaption><b>Joanne Vaughan</b> &middot; Google review</figcaption></figure>
+      <figure class="q"><blockquote>Johnnie was an incredible help in stepping in to get everything fully set up for my property. He made the whole process completely stress-free. Since then, the ongoing management has been seamless.</blockquote><figcaption><b>Jordan Khong</b> &middot; Google review</figcaption></figure>
     </div>
+    <p class="rev-more"><a href="https://maps.google.com/?cid=14009082775718655042" target="_blank" rel="noopener">Read all our Google reviews</a></p>
   </div>
 </section>
 
@@ -457,7 +476,7 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
 
 <script>
 (function(){
-  var CFG = {endpoint: "https://hook.us2.make.com/p21tq5kf7qnbtp1rqzvipfpcuujsdkv3", area: "Launceston", stay: "in Launceston", sendTo: "", preview: false};
+  var CFG = {endpoint: "https://hook.us2.make.com/p21tq5kf7qnbtp1rqzvipfpcuujsdkv3", area: "Launceston", stay: "in Launceston", sendTo: "", guestUrl: "", preview: false};
   var KEYS = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid'];
   var src = {};
   try { src = JSON.parse(sessionStorage.getItem('lead_src') || '{}'); } catch(e) {}
@@ -473,16 +492,25 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
   var form = document.getElementById('lead'), msg = document.getElementById('formmsg'), btn = document.getElementById('f-submit');
   var t0 = Date.now();
   function show(kind, text){ msg.className = 'msg ' + kind; msg.textContent = text; msg.hidden = false; }
+  function guestMsg(){
+    if (CFG.guestUrl) {
+      show('info', "We look after homes for their owners, so we can't take bookings here. To stay " + CFG.stay + ", ");
+      var a = document.createElement('a'); a.href = CFG.guestUrl; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = 'see our homes and book direct'; msg.appendChild(a); msg.appendChild(document.createTextNode('.'));
+    } else {
+      show('info', "We look after homes for their owners, so we can't take bookings here. To stay " + CFG.stay + ", search for it on Airbnb.");
+    }
+  }
   form.addEventListener('change', function(e){
     if (e.target.name === 'role') {
-      if (e.target.value === 'Guest') show('info', "We look after homes for their owners, so we can't take bookings here. To stay " + CFG.stay + ", search for it on Airbnb.");
+      if (e.target.value === 'Guest') guestMsg();
       else msg.hidden = true;
     }
   });
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var d = new FormData(form);
-    if (d.get('role') === 'Guest') { show('info', "We look after homes for their owners, so we can't take bookings here. To stay " + CFG.stay + ", search for it on Airbnb."); return; }
+    if (d.get('role') === 'Guest') { guestMsg(); return; }
     var bad = null;
     ['name','phone','email','address','bedrooms','currently'].forEach(function(k){
       var el = form.elements[k];
