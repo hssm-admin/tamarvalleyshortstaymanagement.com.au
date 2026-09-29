@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Owner guide | Tamar Valley Short Stay Management</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://tamarvalleyshortstaymanagement.com.au/owner-guide.html">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+
+@font-face{font-family:"Plus Jakarta Sans";src:url("/plus-jakarta-sans-latin-wght-normal.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+:root{
+  --navy:#1C3563;--navy-deep:#13132A;--blue:#2662AE;--gold:#D7AD66;--gold-lt:#E4BE71;--bronze:#8A5A24;
+  --paper:#F4F6FA;--white:#FFFFFF;--ink:#17203A;--muted:#55607B;--line:#DCE2ED;--field:#FBFCFE;--field-line:#C5CFE0;
+  --max:1160px;--gutter:clamp(16px,4vw,32px);
+  --font:"Plus Jakarta Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --lace:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2736%27%20height%3D%2724%27%20viewBox%3D%270%200%2036%2024%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%23D7AD66%27%20stroke-width%3D%271.1%27%20stroke-linecap%3D%27round%27%3E%3Cpath%20d%3D%27M0%202.5H36M0%2021.5H36%27%2F%3E%3Ccircle%20cx%3D%2718%27%20cy%3D%2712%27%20r%3D%275.2%27%2F%3E%3Cpath%20d%3D%27M5%202.5C11%202.5%2012.2%205%2013.6%208.6M31%202.5C25%202.5%2023.8%205%2022.4%208.6M5%2021.5C11%2021.5%2012.2%2019%2013.6%2015.4M31%2021.5C25%2021.5%2023.8%2019%2022.4%2015.4%27%2F%3E%3Cpath%20d%3D%27M0%207.5L2.6%2012L0%2016.5M36%207.5L33.4%2012L36%2016.5%27%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2718%27%20cy%3D%2712%27%20r%3D%271.6%27%20fill%3D%27%23D7AD66%27%2F%3E%3C%2Fsvg%3E");
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;word-spacing:.03em}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.h2{word-spacing:.05em;font-weight:300;font-size:clamp(30px,3.6vw,44px);line-height:1.12;letter-spacing:-.015em;color:var(--navy)}
+.lede{color:var(--muted);font-size:18px;max-width:60ch}
+.ic{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:700;font-size:16px;line-height:1;padding:15px 22px;border-radius:8px;border:0;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn-gold{background:linear-gradient(180deg,var(--gold-lt),var(--gold));color:var(--navy-deep);box-shadow:inset 0 -2px 0 rgba(145,78,34,.35)}
+.btn-gold:hover{filter:brightness(1.04)}
+.btn-line{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}
+.btn-line.on-dark{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+
+/* preview bar */
+.pbar{background:#FFF6DF;color:#5B3E12;font-size:13.5px;text-align:center;padding:8px var(--gutter);border-bottom:1px solid #EFD9A6}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:82px}
+.brand img{height:58px;width:auto}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--navy);font-weight:500;font-size:15px}
+.nav a:hover{color:var(--blue)}
+.call{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--navy);font-weight:700;font-size:15.5px;font-variant-numeric:tabular-nums}
+.call .ic{width:20px;height:20px}
+.top .btn{padding:12px 18px;font-size:15px}
+@media (max-width:900px){.nav{display:none}.call{margin-left:auto}}
+.top .btn .short{display:none}
+@media (max-width:560px){.top .wrap{height:68px}.call span{display:none}.brand img{height:46px}.top .btn .long{display:none}.top .btn .short{display:inline}}
+
+/* hero */
+.hero{padding-block:0;background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 46%,var(--navy-deep) 100%);color:#fff;position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,5vw,64px);align-items:start;padding-block:clamp(40px,6vw,76px) clamp(56px,6vw,84px)}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{word-spacing:.05em;font-weight:300;font-size:clamp(40px,5.4vw,64px);line-height:1.04;letter-spacing:-.022em;margin-top:16px}
+.hero .lead{font-size:clamp(17px,1.6vw,19.5px);color:rgba(255,255,255,.86);margin-top:20px;max-width:46ch}
+.proof{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:14px}
+.proof li{display:flex;align-items:baseline;gap:14px}
+.proof b{font-weight:300;font-size:30px;line-height:1;color:var(--gold);min-width:3.3em;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.proof span{color:rgba(255,255,255,.88);font-size:16px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.lace{height:24px;background-image:var(--lace);background-repeat:repeat-x;background-size:36px 24px;background-position:center}
+.hero .lace{position:absolute;left:0;right:0;bottom:18px;opacity:.75}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-actions{display:none}}
+
+/* form */
+.card{background:#fff;color:var(--ink);border-radius:14px;padding:clamp(22px,3vw,30px);box-shadow:0 30px 60px -30px rgba(10,12,30,.65),0 2px 0 rgba(215,173,102,.9) inset}
+.card h2{font-weight:600;font-size:23px;color:var(--navy);letter-spacing:-.01em}
+.card .sub{color:var(--muted);font-size:15px;margin-top:6px}
+form{display:grid;gap:14px;margin-top:20px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:460px){.row2{grid-template-columns:1fr}}
+.f{display:grid;gap:6px}
+.f label,.f legend{font-size:14px;font-weight:600;color:var(--navy)}
+.f .opt{font-weight:400;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:8px;padding:11px 13px;width:100%;min-width:0}
+textarea{min-height:76px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(38,98,174,.18)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.seg label{position:relative;font-weight:500;font-size:14.5px;color:var(--ink);border:1px solid var(--field-line);background:var(--field);border-radius:8px;padding:9px 13px;cursor:pointer}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg input:checked+span{color:var(--navy);font-weight:700}
+.seg label:has(input:checked){border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy);background:#fff}
+.seg label:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+form .btn{width:100%;margin-top:4px;padding:17px 22px;font-size:17px}
+.fine{font-size:13px;color:var(--muted)}
+.fine a{color:var(--navy)}
+.msg{border-radius:10px;padding:14px 16px;font-size:15px}
+.msg.ok{background:#EEF6EE;color:#1E4D27}
+.msg.info{background:#EEF3FB;color:var(--navy)}
+.msg.err{background:#FBEDEC;color:#7A2320}
+.msg a{color:inherit;font-weight:700}
+.done h3{font-weight:600;font-size:22px;color:var(--navy)}
+.done p{margin-top:8px;color:var(--muted)}
+
+/* sections */
+section{padding-block:clamp(64px,8vw,104px)}
+.head{display:grid;gap:14px;margin-bottom:clamp(34px,4vw,52px)}
+.head .eyebrow{color:var(--bronze)}
+.grid-s{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 30px}
+@media (max-width:1000px){.grid-s{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid-s{grid-template-columns:1fr;gap:28px}}
+.svc{display:grid;gap:10px;align-content:start;padding-top:18px;border-top:1px solid var(--line)}
+.svc .ic{color:var(--bronze);width:30px;height:30px}
+.svc h3{font-size:18px;font-weight:700;color:var(--navy);letter-spacing:-.005em}
+.svc p{font-size:15.5px;color:var(--muted)}
+
+.steps-sec{background:#fff}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;counter-reset:s}
+.steps li{position:relative;display:grid;gap:10px;align-content:start}
+.steps .n{font-weight:200;font-size:56px;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.steps h3{font-size:19px;font-weight:700;color:var(--navy)}
+.steps p{font-size:15.5px;color:var(--muted)}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:28px;left:64px;right:-8px;height:1px;background:linear-gradient(90deg,var(--gold),rgba(215,173,102,0))}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.steps li::after{display:none}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+.why .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,72px);align-items:start}
+@media (max-width:900px){.why .wrap{grid-template-columns:1fr}}
+.route{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin-top:26px;font-weight:600;color:var(--navy)}
+.route .dash{flex:0 0 56px;height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 8px,transparent 8px 13px)}
+.route small{flex-basis:100%;font-weight:500;font-size:14px;color:var(--muted)}
+.afar{margin-top:26px;color:var(--ink);font-size:16.5px;max-width:48ch}
+.guests{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:560px){.guests{grid-template-columns:1fr}}
+.guest{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+.guest h3{font-size:17.5px;font-weight:700;color:var(--navy)}
+.guest p{font-size:15.5px;color:var(--muted);margin-top:6px}
+
+.homes{background:#fff}
+.homes-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+@media (max-width:900px){.homes-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.homes-grid{grid-template-columns:1fr}}
+.home a{display:grid;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;height:100%}
+.home a:hover{border-color:var(--gold)}
+.home img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--paper);color:transparent;font-size:0}
+.home-b{display:grid;gap:4px;padding:16px 18px 18px}
+.home-b b{font-size:16.5px;font-weight:700;color:var(--navy);line-height:1.35}
+.home-b span{font-size:14.5px;color:var(--muted)}
+.home-b .home-r{color:var(--bronze);font-weight:600}
+.homes-more{margin-top:28px}
+.homes-more a{color:var(--navy);font-weight:700}
+.done-btn{margin-top:18px}
+.done-sub{margin-top:22px!important;font-weight:700;color:var(--navy)!important}
+.done-list{margin:8px 0 14px;padding-left:20px;color:var(--muted)}
+.done-list li{margin-top:6px}
+.done-list a{color:var(--navy);font-weight:600}
+
+.reviews{background:var(--navy-deep);color:#fff}
+.reviews .h2{color:#fff}
+.reviews .head .eyebrow{color:var(--gold)}
+.reviews .note{color:rgba(255,255,255,.7);font-size:15px}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+@media (max-width:900px){.quotes{grid-template-columns:1fr}}
+.q{margin:0;display:grid;gap:18px;align-content:space-between;padding-top:22px;border-top:1px solid rgba(215,173,102,.5)}
+.q blockquote{margin:0;font-size:17.5px;line-height:1.55;font-weight:300;color:rgba(255,255,255,.94)}
+.q blockquote::before{content:"\201C";display:block;font-size:54px;line-height:.6;color:var(--gold);font-weight:300;margin-bottom:10px}
+.q figcaption{font-size:14px;color:rgba(255,255,255,.7)}
+.q figcaption b{color:#fff;font-weight:600}
+.rev-more{margin-top:32px}
+.rev-more a{color:var(--gold);font-weight:700}
+
+.meet{background:#fff}
+.meet .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:center;max-width:980px}
+.meet-photo{width:clamp(136px,15vw,168px);height:auto;aspect-ratio:1;border-radius:50%;border:4px solid var(--gold);object-fit:cover;background:var(--paper)}
+.meet-body{display:grid;gap:14px}
+.meet-body .eyebrow{color:var(--bronze)}
+.meet-body p{color:var(--muted);max-width:62ch}
+.meet-body p.first{color:var(--ink);font-size:18px}
+.meet-sign{display:grid;gap:2px;margin-top:4px}
+.meet-sign b{color:var(--navy);font-weight:700;font-size:17px}
+.meet-sign span{font-size:14.5px;color:var(--muted)}
+@media (max-width:700px){.meet .wrap{grid-template-columns:1fr}}
+
+.faq .wrap{max-width:880px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 2px;font-weight:600;font-size:18px;color:var(--navy)}
+summary::-webkit-details-marker{display:none}
+summary .ic{width:22px;height:22px;color:var(--bronze);transition:transform .2s}
+details[open] summary .ic{transform:rotate(45deg)}
+details p{padding:0 2px 22px;color:var(--muted);max-width:68ch}
+
+.cta{background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:#fff;padding-block:0}
+.cta .lace{opacity:.7}
+.cta .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;padding-block:clamp(48px,6vw,76px)}
+.cta h2{word-spacing:.05em;font-weight:300;font-size:clamp(28px,3.4vw,42px);line-height:1.12;letter-spacing:-.015em;max-width:22ch}
+.cta .tag{color:var(--gold);margin-top:10px;font-weight:500}
+.cta .acts{display:flex;flex-wrap:wrap;gap:12px}
+
+footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:14px;padding-block:44px calc(44px + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:grid;grid-template-columns:auto 1fr;gap:20px 48px;align-items:start}
+footer img{height:54px;width:auto}
+footer .cols{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:flex-end}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:13px;color:rgba(255,255,255,.6)}
+@media (max-width:700px){footer .wrap{grid-template-columns:1fr}footer .cols{justify-content:flex-start}}
+
+/* privacy */
+.policy{padding-block:clamp(44px,6vw,80px)}
+.policy .wrap{max-width:820px}
+.policy h1{font-weight:300;font-size:clamp(34px,4.4vw,50px);line-height:1.08;letter-spacing:-.02em;color:var(--navy)}
+.policy .upd{color:var(--muted);font-size:14px;margin-top:10px}
+.policy h2{font-size:20px;font-weight:700;color:var(--navy);margin-top:34px}
+.policy p{margin-top:10px;color:var(--ink);max-width:68ch}
+.policy a{color:var(--blue)}
+details.pp{border:0;margin-top:0}
+details.pp>summary{font-size:15px;color:#fff;padding:0;justify-content:flex-start}
+a[href^="mailto:"]{overflow-wrap:anywhere}
+.guide{padding-block:clamp(40px,6vw,76px)}
+.guide .wrap{max-width:900px}
+.guide h1{font-weight:300;font-size:clamp(36px,4.6vw,54px);line-height:1.06;letter-spacing:-.02em;color:var(--navy)}
+.guide .intro{font-size:18px;color:var(--ink);margin-top:18px;max-width:62ch}
+.guide h2{font-size:22px;font-weight:700;color:var(--navy);margin-top:46px;padding-top:22px;border-top:1px solid var(--line)}
+.guide .sec-lede{color:var(--muted);margin-top:8px;max-width:62ch}
+.g-list{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:18px 30px}
+@media (max-width:640px){.g-list{grid-template-columns:1fr}}
+.g-list b{display:block;color:var(--navy);font-size:16.5px}
+.g-list span{display:block;color:var(--muted);font-size:15.5px;margin-top:3px}
+.fees{margin-top:18px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.fees div{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px 20px;border-top:1px solid var(--line)}
+.fees div:first-child{border-top:0}
+.fees b{color:var(--navy)}
+.fees span{color:var(--ink)}
+@media (max-width:560px){.fees div{grid-template-columns:1fr;gap:4px}}
+.g-steps{margin:18px 0 0;padding-left:22px;display:grid;gap:12px}
+.g-steps b{color:var(--navy)}
+.g-steps span{color:var(--muted)}
+.g-note{margin-top:16px;background:#EEF3FB;color:var(--navy);border-radius:10px;padding:14px 16px;font-size:15.5px}
+.g-needs{margin:16px 0 0;padding-left:22px;display:grid;gap:8px;color:var(--ink)}
+.g-cta{grid-template-columns:minmax(0,1fr);margin-top:50px;background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:#fff;border-radius:14px;padding:clamp(24px,4vw,40px);display:grid;gap:16px}
+.g-cta h2{color:#fff;border:0;margin:0;padding:0;font-weight:300;font-size:clamp(26px,3vw,36px);line-height:1.15}
+.g-cta p{color:rgba(255,255,255,.85)}
+.g-cta .acts{display:flex;flex-wrap:wrap;gap:12px}
+.g-cta a:not(.btn){color:#fff}
+.g-tools{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+@media print{
+  .top,.g-tools,.g-cta .acts,footer .cols{display:none!important}
+  body{background:#fff;font-size:12pt}
+  .guide{padding-block:0}
+  .guide h2{break-after:avoid}
+  .g-list li,.fees div,.g-steps li{break-inside:avoid}
+  .g-cta{background:none;color:var(--ink);border:1px solid var(--line)}
+  .g-cta h2,.g-cta p,.g-cta a:not(.btn){color:var(--ink)}
+  footer{background:none;color:var(--muted);padding-block:12px}
+  footer img{display:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Tamar Valley Short Stay Management home"><img src="/logo_h.webp" alt="Tamar Valley Short Stay Management" width="110" height="46"></a>
+    <a class="call" href="tel:+61448595221" style="margin-left:auto"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.3 4-2 1.4a11 11 0 0 0 6.6 6.6l1.4-2 4 1.3v2.6a2 2 0 0 1-2 2A16.6 16.6 0 0 1 4.6 5.5a2 2 0 0 1 2-2z"/></svg><span>0448 595 221</span></a>
+    <a class="btn btn-gold" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-guide" target="_blank" rel="noopener"><span class="long">Book a call</span><span class="short">Book</span></a>
+  </div>
+</header>
+<main class="guide">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--bronze)">Owner guide</p>
+    <h1 style="margin-top:12px">How we look after your Launceston property</h1>
+    <p class="intro">Tamar Valley Short Stay Management is part of Hobart Short Stay Management. Our Hobart team runs pricing, guest messaging and owner accounts for 120+ holiday homes across Tasmania, and we line up local cleaners and trades for your property and manage them for you.</p>
+    <div class="g-tools">
+      <button class="btn btn-line" type="button" onclick="window.print()">Save or print this guide</button>
+      <a class="btn btn-gold" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-guide" target="_blank" rel="noopener">Book a time for your call</a>
+    </div>
+
+    <h2>What's included</h2>
+    <ul class="g-list">
+      <li><b>Listing and photos</b><span>Professional photos and a listing written to get booked, live on Airbnb, Booking.com, Stayz and Google, plus direct bookings.</span></li>
+      <li><b>Pricing that keeps up</b><span>Your nightly rates and minimum stays are reviewed every day and matched to demand, through busy weekends and quiet months.</span></li>
+      <li><b>Guests looked after</b><span>We answer every enquiry and message, run check-ins and check-outs, and guests can reach us any time for anything urgent.</span></li>
+      <li><b>Cleaning and hotel linen</b><span>Professional cleaners after every stay, with hotel-style white linen, fresh towels and triple-sheeted beds.</span></li>
+      <li><b>Restocked every stay</b><span>Topped up before every guest: toilet paper, shampoo, conditioner, body wash, hand wash, tea, coffee, sugar, milk, olive oil, dishwasher tablets, dishwashing and laundry liquid, paper towel and bin liners. Other items on request.</span></li>
+      <li><b>Maintenance handled</b><span>Regular inspections, a video after every clean, and repairs arranged quickly with trades we trust.</span></li>
+      <li><b>Paid weekly</b><span>Every Wednesday we pay out what you&#39;ve earned from the past week&#39;s check-outs, with a statement showing each booking and expense.</span></li>
+      <li><b>Rules and paperwork</b><span>On request, we&#39;ll lodge your council permit application and help with body corporate rules and fire safety checks.</span></li>
+    </ul>
+
+    <h2>Fees</h2>
+    <p class="sec-lede">Simple, and the same as for our Hobart owners.</p>
+    <div class="fees">
+      <div><b>Management fee</b><span>20% plus GST of the net, which is what&#39;s left after the platform&#39;s fee and the cleaning fee. That usually comes to about 13 to 14% of what the guest pays, plus GST.</span></div>
+      <div><b>Monthly Property Fee</b><span>$130 plus GST a month per property, the same for every owner. It covers the software and services every listing needs, booked or not.</span></div>
+      <div><b>Cleaning</b><span>Every booking includes a cleaning fee, charged to the guest. We keep it to cover the whole turnover (clean, linen, laundry and consumables), and our management fee isn&#39;t calculated on it. If you&#39;d like extra items stocked for guests, we set the cleaning fee to cover them.</span></div>
+      <div><b>Setting up</b><span>Nothing to pay up front: professional photos, and a first deep clean if the property needs one, come off your statement once you&#39;re earning.</span></div>
+      <div><b>No lock-in</b><span>Either side can end the agreement on 30 days&#39; notice. There&#39;s no minimum term, and unlike some managers, we don&#39;t take a cut of your future bookings once the agreement ends.</span></div>
+    </div>
+
+    <h2>How it starts</h2>
+    <ol class="g-steps">
+      <li><b>Free appraisal.</b> <span>Send us the details or give us a call. We&#39;ll look at similar Launceston listings and talk you through what your place could earn.</span></li>
+      <li><b>Sign up.</b> <span>Sign our management agreement and fill in one property details form.</span></li>
+      <li><b>Get guest-ready.</b> <span>We organise photos, linen, cleaning, the listing and pricing. If the home is furnished and has any permit or registration it needs, bookings can usually open within a few days.</span></li>
+      <li><b>Get paid.</b> <span>Payouts land every Wednesday, with a statement for every stay.</span></li>
+    </ol>
+    <p class="g-note">Already on Airbnb? You keep your own listing, with its reviews and Guest favourite status, and add us as co-host, so there&#39;s no starting from scratch.</p>
+
+    <h2>What the home needs</h2>
+    <p class="sec-lede">The basics every guest expects. We'll send you the full checklist and help source anything missing.</p>
+    <ul class="g-needs">
+      <li>Plates, bowls, mugs, glasses and cutlery for every guest, plus pots, pans and basic cooking gear</li>
+      <li>A doona and pillows for every bed, and a mattress protector for each one</li>
+      <li>A hairdryer, iron and ironing board, vacuum, and a clothes horse</li>
+      <li>Working smoke alarms, a fire extinguisher and a first aid kit</li>
+      <li>WiFi, and a digital lock or two lockboxes with two sets of keys</li>
+      <li>Outdoor seating for the full guest count, and a BBQ if there&#39;s room</li>
+    </ul>
+
+    <h2>Permits, rules and insurance</h2>
+    <p class="sec-lede" style="color:var(--ink)"><b style="color:var(--navy)">Do I need a permit?</b> In Tasmania, sharing the home you live in usually doesn&#39;t need a permit. A house or unit that isn&#39;t your main home usually needs a planning permit from council. If yours does, we can lodge the application for you on request. You pay the council&#39;s fee, and council makes the decision, usually within 30 to 42 days.</p>
+    <p class="sec-lede" style="color:var(--ink)"><b style="color:var(--navy)">Insurance.</b> We strongly recommend specialised short-stay insurance. Airbnb and the other platforms have their own cover, but it shouldn&#39;t be your main policy.</p>
+
+    <div class="g-cta">
+      <h2>Ready to talk it through?</h2>
+      <p>Book a time for a call, or ring Johnnie on <a href="tel:+61448595221">0448 595 221</a>. You can also email <a href="mailto:admin@tamarvalleyshortstaymanagement.com.au">admin@tamarvalleyshortstaymanagement.com.au</a>.</p>
+      <div class="acts">
+        <a class="btn btn-gold" href="https://calendly.com/admin-hobartshortstaymanagement/short-stay-chat-hobart-short-stay-management?utm_source=tamarvalley-guide" target="_blank" rel="noopener">Book a time for your call</a>
+        <a class="btn btn-line on-dark" href="/#appraisal">Get a free appraisal</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <img src="/logo_h_i.webp" alt="Tamar Valley Short Stay Management" width="130" height="54">
+    <div class="cols">
+      <div><a href="tel:+61448595221">0448 595 221</a></div>
+      <div><a href="mailto:admin@tamarvalleyshortstaymanagement.com.au">admin@tamarvalleyshortstaymanagement.com.au</a></div>
+      <div><a href="/">Home</a></div>
+    </div>
+    <p class="legal">Tamar Valley Short Stay Management is a business name of Hobart Short Stay Management Pty Ltd (ABN 12 700 759 191). Guide updated 29 September 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
