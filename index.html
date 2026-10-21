@@ -273,26 +273,38 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
           </div>
           <div class="f"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
           <div class="f"><label for="f-address">Property address or suburb</label><input id="f-address" name="address" autocomplete="street-address" placeholder="e.g. Trevallyn" required></div>
+          <div class="f"><label for="f-now">It's currently</label>
+            <select id="f-now" name="currently" required>
+              <option value="">Choose</option>
+              <option>On Airbnb or Stayz, I host it</option>
+              <option>On Airbnb or Stayz, with a manager</option>
+              <option>Furnished and ready to go</option>
+              <option>Still to furnish or fix up</option>
+              <option>Our holiday home</option>
+              <option>Long-term rented</option>
+              <option>We live in it</option>
+            </select></div>
+          <div class="f" id="f-listing-row" style="display:none"><label for="f-listing">Link to your listing <span class="opt">(optional)</span></label><input id="f-listing" name="listing" inputmode="url" autocomplete="off" placeholder="e.g. airbnb.com.au/rooms/12345"></div>
           <div class="row2">
             <div class="f"><label for="f-beds">Bedrooms</label>
               <select id="f-beds" name="bedrooms" required>
                 <option value="">Choose</option><option>Studio</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
               </select></div>
-            <div class="f"><label for="f-now">It's currently</label>
-              <select id="f-now" name="currently" required>
+            <div class="f"><label for="f-when">What's your timing?</label>
+              <select id="f-when" name="timing" required>
                 <option value="">Choose</option>
-                <option>Empty or just bought</option>
-                <option>Long-term rented</option>
-                <option>Already on Airbnb or Stayz</option>
-                <option>Our holiday home</option>
-                <option>Where we live</option>
-                <option>Still buying it</option>
+                <option>As soon as possible</option>
+                <option>In the next few months</option>
+                <option>6 to 12 months away</option>
+                <option>More than a year away</option>
+                <option>Just exploring for now</option>
               </select></div>
           </div>
           <fieldset class="f">
             <legend>Are you the owner?</legend>
             <div class="seg">
               <label for="f-own-yes"><input type="radio" id="f-own-yes" name="role" value="Owner" checked><span>Yes, I own it</span></label>
+              <label for="f-own-few"><input type="radio" id="f-own-few" name="role" value="Owns a few"><span>I own a few</span></label>
               <label for="f-own-buy"><input type="radio" id="f-own-buy" name="role" value="Buying"><span>I'm buying</span></label>
               <label for="f-own-guest"><input type="radio" id="f-own-guest" name="role" value="Guest"><span>I want to book a stay</span></label>
             </div>
@@ -495,6 +507,9 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
 
   var form = document.getElementById('lead'), msg = document.getElementById('formmsg'), btn = document.getElementById('f-submit');
   var t0 = Date.now();
+  var now = document.getElementById('f-now'), lrow = document.getElementById('f-listing-row');
+  function syncListing(){ var on = /^On Airbnb/.test(now.value); lrow.style.display = on ? '' : 'none'; if (!on) form.elements['listing'].value = ''; }
+  now.addEventListener('change', syncListing); syncListing();
   function show(kind, text){ msg.className = 'msg ' + kind; msg.textContent = text; msg.hidden = false; }
   function guestMsg(){
     if (CFG.guestUrl) {
@@ -516,7 +531,7 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
     var d = new FormData(form);
     if (d.get('role') === 'Guest') { guestMsg(); return; }
     var bad = null;
-    ['name','phone','email','address','bedrooms','currently'].forEach(function(k){
+    ['name','phone','email','address','currently','bedrooms','timing'].forEach(function(k){
       var el = form.elements[k];
       var ok = el.value.trim() !== '' && (k !== 'email' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim())) && (k !== 'phone' || el.value.replace(/\D/g,'').length >= 8);
       el.setAttribute('aria-invalid', ok ? 'false' : 'true');
@@ -526,7 +541,7 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
     if (CFG.preview) { show('info', 'This is a preview. On the live site these details go straight to our team.'); return; }
     if (d.get('company') || Date.now() - t0 < 2500) { finish(); return; }
     var body = new URLSearchParams();
-    ['name','phone','email','address','bedrooms','currently','role','notes'].forEach(function(k){ body.append(k, (d.get(k) || '').toString().trim()); });
+    ['name','phone','email','address','bedrooms','currently','timing','listing','role','notes'].forEach(function(k){ body.append(k, (d.get(k) || '').toString().trim()); });
     body.append('area', CFG.area);
     KEYS.concat(['landing','referrer']).forEach(function(k){ body.append(k, src[k] || ''); });
     body.append('page', location.href.split('#')[0]);
